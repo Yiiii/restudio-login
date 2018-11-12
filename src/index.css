@@ -9,6 +9,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f0f0f0;
 }
 
 code {
@@ -18,6 +19,8 @@ code {
 #logoInHeader {
   margin-right: 20px;
 }
+
+
 .primaryPhantomBtn {
     width: 128px;
     height: 40px;
@@ -56,6 +59,15 @@ code {
 #signUpCTA {
   margin-left: auto;
 }
+.headerBG {
+  /* width: 1200px; */
+  height: 60px;
+  -webkit-backdrop-filter: blur(4.6px);
+  backdrop-filter: blur(4.6px);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14);
+  background-color: rgba(250, 250, 250,1);
+}
+
 .header{
   display:flex;
   align-items:center;
@@ -63,8 +75,8 @@ code {
   background-color:'red';
   margin-left: 3.33vw;
   margin-right: 3.33vw;
-  margin-top:20px;
-  margin-bottom: 20px;
+  padding-top:10px;
+  padding-bottom: 10px;
 }
 
 
@@ -89,13 +101,136 @@ code {
     color: #584aec;
   }
 
+.loginForm{
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  padding-left:60px;
+  padding-right:60px;
+}
+
+.formTitle {
+  width: 440px;
+  height: 30px;
+  font-family: Merriweather;
+  font-size: 28.3px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.87);
+  padding-bottom: 45px;
+  margin-top:0;
+  margin-bottom: 0;
+}
+.accountInput{
+  width: 320px;
+  height: 40px;
+  border-radius: 6px;
+  border: solid 1px #b4b4b4;
+  font-family: Lato;
+  font-size: 16.9px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: 0.2px;
+  color: #212121;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom: 28px;
+  margin-bottom: 0;
+  text-indent:10px;
+}
+
+.accountInput::placeholder { color: #757575;
+}
+
+.accountInput:-ms-input-placeholder { color: #757575;
+}
+
+.accountInput::-ms-input-placeholder { color: #757575;
+}
 
 
 
+.loginBtn {
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:4px;
+  margin-bottom: auto;
+  width: 320px;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.14);
+  background-image: linear-gradient(to top, #4f43fc, #7561ff);
+  font-family: Lato;
+  font-size: 14.4px;
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.11;
+  letter-spacing: 1.8px;
+  text-align: center;
+  color: #ffffff;
+  text-transform:uppercase;
+}
 
+.logInBG {
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 15vh;
+  width: 560px;
+  height: 415px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  display:flex;
+  flex-direction: column;
+}
 
+#findmypassword {
+  width: 125px;
+  height: 20px;
+  font-family: Lato;
+  font-size: 14.6px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.37;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+  padding-top:30px;
+  align-self: flex-end;
+  padding-right:60px;
+}
 
+.signUpCTA {
+  width:284px;
+  margin-left:auto;
+  margin-right:auto;
+  display:flex;
+  flex-direction: row;
+  padding-top:60px;
+}
 
+.signUpCTA #CTA{
+  width: 259px;
+  height: 14px;
+  font-family: Merriweather;
+  font-size: 13.3px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: 0.1px;
+  text-align: center;
+  color: #646464;
+  padding-right:8px;
+}
 
   :root {
     --maincolor-secondary:#584aec;

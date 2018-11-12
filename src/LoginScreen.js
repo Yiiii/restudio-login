@@ -7,7 +7,6 @@ class LoginScreen extends Component {
         return(
             <div>
                 <Header navItems={[{navTitle:'Features',href: "#"},{navTitle:'App Cases',href: "#"},{navTitle:'Pricing',href: "#"},{navTitle:'Support',href: "#"}]} />
-                Below is a log-in Section:
                 <LoginSection />
                 <SignUpCTA />
             </div>
@@ -24,12 +23,14 @@ class Header extends Component {
 
     render(){
         return(
+            <div className="headerBG" > 
             <div className="header" >
                 <img id="logoInHeader" src='logo_ReStudio@3x.svg' alt='A logo of react studio'/>
                 <nav>
-                    {this.props.navItems.map((item) => <a href={item.href} class="navItem">{item.navTitle}</a>)}
+                    {this.props.navItems.map((item,i) => <a  key={i} href={item.href} className="navItem">{item.navTitle}</a>)}
                 </nav>
-                <button className="alignToLeft" className="primaryPhantomBtn" id = "signUpCTA">Sign Up</button>
+                <button  className="primaryPhantomBtn" id = "signUpCTA">Sign Up</button>
+            </div>
             </div>
             )
     }
@@ -38,8 +39,9 @@ class SignUpCTA extends Component {
 
     render(){
         return(
-            <div >
-               You should really sign up for React Studio!
+            <div className='signUpCTA'>
+               <p id='CTA'>New here? Sign up an account for free.</p>
+               <img src='chevron_right.svg' alt='Click to Sign Up.'  />
             </div>
             )
     }
